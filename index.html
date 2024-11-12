@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>Pet Care Service</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="pet-info.html">Add Pet Info</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2>Give Your Pet the Best Care While You're Away</h2>
+            <p>Let us take care of your pets while you're at work or traveling. Safe, fun, and caring environment guaranteed!</p>
+            <button onclick="window.location.href='#contact'">Contact Us</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or would like to schedule a visit, feel free to contact us!</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required placeholder="Enter your name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Enter your email">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required placeholder="Enter your message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Pet Care Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

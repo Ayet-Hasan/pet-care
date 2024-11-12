@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="pet-info" class="pet-info-section">
+        <div class="pet-info-container">
+            <h2>Enter Your Pet's Information</h2>
+            <form action="#" method="POST">
+                <label for="pet-name">Pet Name:</label>
+                <input type="text" id="pet-name" name="pet-name" required placeholder="Enter your pet's name">
+
+                <label for="pet-type">Pet Type:</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Rabbit">Rabbit</option>
+                    <option value="Others">Others</option>
+                </select>
+
+                <label for="pet-age">Age:</label>
+                <input type="number" id="pet-age" name="pet-age" required placeholder="Enter pet's age">
+
+                <label for="arrival-time">Arrival Time (hours):</label>
+                <input type="number" id="arrival-time" name="arrival-time" required placeholder="Enter how long the pet will stay">
+
+                <button type="submit">Submit Pet Info</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Pet Care Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

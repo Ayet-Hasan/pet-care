@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #ff6b6b, #f06, #48c6ef);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Pet Info Section */
+.pet-info-section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pet-info-container {
+    text-align: center;
+}
+
+.pet-info-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.pet-info-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pet-info-container input,
+.pet-info-container select {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.pet-info-container input:focus,
+.pet-info-container select:focus {
+    border-color: #48c6ef;
+    outline: none;
+}
+
+.pet-info-container button {
+    padding: 15px;
+    font-size: 18px;
+    background: #48c6ef;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pet-info-container button:hover {
+    background-color: #ff6b6b;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pet-info-section {
+        padding: 40px 15px;
+        max-width: 500px;
+    }
+
+    .pet-info-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .pet-info-container form {
+        gap: 15px;
+    }
+
+    .pet-info-container input,
+    .pet-info-container select,
+    .pet-info-container button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pet-info-section {
+        padding: 30px 10px;
+        max-width: 100%;
+    }
+
+    .pet-info-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .pet-info-container form {
+        gap: 10px;
+    }
+
+    .pet-info-container input,
+    .pet-info-container select,
+    .pet-info-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
